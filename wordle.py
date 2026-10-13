@@ -143,7 +143,7 @@ else:
 # Result
 print(f"Result: {output}")
 if output == "🟩🟩🟩🟩🟩":
-    print("You win")
+    print("YOU WINNNNNN")
     guess_word = input("ENTER A WORD: ")
 output = ""
 

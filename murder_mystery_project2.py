@@ -2076,6 +2076,8 @@ if will_u_go == "yes":
             print("  ")
             print("  ")
             print("The end.")
+        elif first_what_do_you_do == "idk":
+            print("woopsie i guess you die oh no")
 
         else:
             print("you are stuck and don't know what to do.")
