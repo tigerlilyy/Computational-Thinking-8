@@ -1,11 +1,11 @@
 import random
 
-character_list = ["Lorelai","Rory", "Emily","Dean", "Luke", "Jess", "Logan", "Lane", "Sookie", "Paris", "Kirk", "Richard"]
+character_list = ["Lorelai","Rory","Christopher", "Emily","Dean", "Luke", "Jess", "Logan", "Lane", "Sookie", "Paris", "Kirk", "Richard"]
 character = random.choice(character_list)
 
  # print(f"{character}")
 
-for i in range(7):
+for i in range(5):
     guess = input("Guess a character from Gilmore Girls:   ")
     if guess == character:
         print("you win! yayyyy")
@@ -43,6 +43,8 @@ for i in range(7):
             print("the character retired at one point")
         elif character == "Kirk":
             print("everyone lowkey loves and hates him ")
+        elif character == "Christopher":
+            print("he has two kids")
     if i == 2:
         if character == "Lorelai":
             print("she is brunette")
@@ -68,6 +70,8 @@ for i in range(7):
             print("he has graying hair")
         elif character == "Kirk":
             print("he has light brown hair")
+        elif character == "Christopher":
+            print("he is brunette")
 print("oh noooo you ran out of guesses..... YOU LOSE")
 print()
 print(f"the character was {character}! but you didn't guess them so HAHA TOO BAD")
