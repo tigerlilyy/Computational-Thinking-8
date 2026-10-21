@@ -6,7 +6,7 @@ character = random.choice(character_list)
  # print(f"{character}")
 
 for i in range(7):
-    guess = input("Guess a character:   ")
+    guess = input("Guess a character from Gilmore Girls:   ")
     if guess == character:
         print("you win! yayyyy")
         print()
@@ -68,3 +68,6 @@ for i in range(7):
             print("he has graying hair")
         elif character == "Kirk":
             print("he has light brown hair")
+print("oh noooo you ran out of guesses..... YOU LOSE")
+print()
+print(f"the character was {character}! but you didn't guess them so HAHA TOO BAD")
