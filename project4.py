@@ -8,16 +8,20 @@ character = random.choice(character_list)
 for i in range(5):
     guess = input("Guess a character from Gilmore Girls:   ")
     if guess == character:
+        #if you guess it right it says this
         print("you win! yayyyy")
         print()
         print(f"You guessed right, it was {character}!!!!!")
         quit()
 
+#this is the first time it asks the question
     if i == 0:
         if character == "Lorelai" or character == "Rory" or character == "Emily" or character == "Lane" or character == "Sookie" or character == "Paris":
             print("the character is a girl")
         else:
             print("the character is a guy")
+
+#this is the second time it gives you a better hint
     if i == 1:
         if character == "Lorelai":
             print("she loves coffee")
@@ -45,6 +49,8 @@ for i in range(5):
             print("everyone lowkey loves and hates him ")
         elif character == "Christopher":
             print("he has two kids")
+
+#this is the third time asking and has another hint
     if i == 2:
         if character == "Lorelai":
             print("she is brunette")
@@ -72,6 +78,9 @@ for i in range(5):
             print("he has light brown hair")
         elif character == "Christopher":
             print("he is brunette")
+#you get five guesses but only three hints 
+
+#this is if you run out of guesses and dont guess the right character so you lose
 print("oh noooo you ran out of guesses..... YOU LOSE")
 print()
 print(f"the character was {character}! but you didn't guess them so HAHA TOO BAD")
